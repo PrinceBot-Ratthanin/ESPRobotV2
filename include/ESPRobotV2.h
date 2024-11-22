@@ -80,6 +80,9 @@ void clear_pixel(int16_t x, int16_t y)
   display.setColor(BLACK);
   display.setPixel(x, y);
 }
+int _Knob(){
+  return analogRead(36);
+}
 void ESPRobotV2(){
   pinMode(M1A,OUTPUT);
   pinMode(M1B,OUTPUT);

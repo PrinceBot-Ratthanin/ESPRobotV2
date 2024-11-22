@@ -142,6 +142,7 @@ void motor(int pin, int Speeds) {
       ledcWrite(9, 255 - abs(_SpeedsD));
     }
   }
+  delay(1);
 }
 void motor_control(uint8_t state, float _speed) {
  switch(state){
@@ -176,7 +177,6 @@ void motor_control(uint8_t state, float _speed) {
     case 22:{motor(2,-_speed);motor(3,-_speed);}break;
 
   }
-  delay(1);
 }
 
 // void MT(int speeda, int speedb,int time_speed){ 
